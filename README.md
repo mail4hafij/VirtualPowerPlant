@@ -24,7 +24,7 @@ Run the Simulator project
 
 
 ## Way 2: 
-Comment out line 48 to 54 in PowerCommandSource class so that we emit events to azure service bus. Run the function app first, then the simulator.
+Comment out lines 48 to 54 in PowerCommandSource class so that we emit events to azure service bus. Run the function app first, then the simulator.
 
 
 
