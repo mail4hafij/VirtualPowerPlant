@@ -19,11 +19,11 @@ I used -
 * AzureServiceBus for event queuing.
 
 ### How to run locally
-## Way 1:
+#### Way 1:
 Run the Simulator project. The CSV logger saves the data into a temp-file.
 
 
-## Way 2: 
+#### Way 2: 
 The following steps are needed - 
 1. Comment out lines 48 to 54 in PowerCommandSource class so that we emit events to azure service bus.
 2. Fill in the connection string and the queue name from your AzureServiceBus inside the **Function** app and **Simulator** projects
