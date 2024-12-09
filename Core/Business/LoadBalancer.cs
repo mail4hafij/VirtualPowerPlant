@@ -20,8 +20,9 @@ public class LoadBalancer : ILoadBalancer
         // positive power means - we need to discharge the battery pool to supply power to VPP.
         // negetive power means - we need to charge the battery pool since the negetive demand in the VPP.
 
-        // Going with assumption 2
-        requestedPower = -1 * requestedPower;
+        // GOING WITH ASSUMPTION 2
+        // Comment out the next line if assumption 1 is correct.
+        requestedPower = -1 * requestedPower; 
 
         if (requestedPower < 0)
         {

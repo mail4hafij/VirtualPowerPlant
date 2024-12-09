@@ -4,8 +4,6 @@ using Core.Business.Models;
 using Core.Integration;
 using Microsoft.Extensions.Configuration;
 using Autofac;
-using Autofac.Core.Lifetime;
-using Autofac.Core;
 using Core.IoC;
 
 // SOME BASIC SETUP START
