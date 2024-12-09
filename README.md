@@ -22,6 +22,10 @@ I used -
 #### Way 1:
 Run the Simulator project. The CSV logger saves the data into a temp-file.
 
+**Conceptual model**
+
+<img src="Concept_one.png" />
+
 #### Way 2: 
 The following steps are needed - 
 1. Comment out lines 48 to 54 in PowerCommandSource class so that we emit events to azure service bus.
@@ -31,5 +35,9 @@ The following steps are needed -
 "ServiceBusPowerReaderQueue": ""
 ``` 
 4. Run the function app first, then the simulator.
+
+**Conceptual model**
+
+<img src="Concept_two.png" />
 
 ENJOY! 
