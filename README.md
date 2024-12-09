@@ -29,7 +29,17 @@ Run the Simulator project. The CSV logger saves the data into a temp-file.
 #### Way 2: 
 The following steps are needed - 
 1. Comment out lines 48 to 54 in PowerCommandSource class so that we emit events to azure service bus.
-2. Fill in the connection string and the queue name from your AzureServiceBus inside the **Function** app and the **Simulator** project.
+``` 
+/*
+await _powerReaderEventService.EmitPowerReaderEvent(new PowerReader()
+{
+    BatteryPoolId = 1, // some dummy id to indicate which batterypool to balance
+    Magnitude = Magnitude
+});
+*/
+```
+
+3. Fill in the connection string and the queue name from your AzureServiceBus inside the local.settings.json file in the **Function** app and the appsettings.json in the **Simulator** project.
 ``` 
 "ServiceBusConnectionString": "",
 "ServiceBusPowerReaderQueue": ""
