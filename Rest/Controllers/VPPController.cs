@@ -9,7 +9,7 @@ using System.Text;
 namespace Rest.Controllers
 {
     // Route for URI versioning
-    // [Route("api/v{version:apiVersion}/Search/[action]")]
+    // [Route("api/v{version:apiVersion}/Vpp/[action]")]
     [ApiController]
     [ApiVersion("1.0")]
     [Route("[controller]")]
